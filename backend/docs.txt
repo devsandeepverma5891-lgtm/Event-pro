@@ -1,0 +1,211 @@
+# Event Management API Documentation
+
+## Base URL
+`http://localhost:3001`
+
+## Authentication
+All endpoints except `/register` and `/login` require a valid JWT token in the Authorization header.
+
+---
+
+## 1. User Registration
+**URL**: `POST /register`  
+**Description**: Register a new user  
+**Authentication**: Not required
+
+### Request Headers
+```
+Content-Type: application/json
+```
+
+### Request Body
+```json
+{
+    "username": "johndoe",
+    "email": "john@example.com",
+    "password": "password123",
+    "profile": ""
+}
+```
+
+### Success Response (201)
+```json
+{
+    "status": true,
+    "message": "User registered successfully",
+    "user": {
+        "username": "johndoe",
+        "email": "john@example.com"
+    }
+}
+```
+
+---
+
+## 2. User Login
+**URL**: `POST /login`  
+**Description**: Authenticate user and get JWT token  
+**Authentication**: Not required
+
+### Request Headers
+```
+Content-Type: application/json
+```
+
+### Request Body
+```json
+{
+    "username": "johndoe",
+    "password": "password123"
+}
+```
+
+### Success Response (200)
+```json
+{
+    "status": true,
+    "message": "Login successful",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+    "user": {
+        "username": "johndoe",
+        "email": "john@example.com"
+    }
+}
+```
+
+---
+
+## 3. Get User Profile
+**URL**: `GET /user/:username`  
+**Description**: Get user profile by username  
+**Authentication**: Required
+
+### Request Headers
+```
+Content-Type: application/json
+Authorization: Bearer <your_jwt_token>
+```
+
+### URL Parameters
+- `username` (required): The username of the user to fetch
+
+### Success Response (200)
+```json
+{
+    "status": true,
+    "user": {
+        "username": "johndoe",
+        "email": "john@example.com",
+        "profile": ""
+    }
+}
+```
+
+---
+
+## 4. Generate OTP
+**URL**: `GET /generate-otp`  
+**Description**: Generate OTP for the authenticated user  
+**Authentication**: Required
+
+### Request Headers
+```
+Content-Type: application/json
+Authorization: Bearer <your_jwt_token>
+```
+
+### Success Response (200)
+```json
+{
+    "status": true,
+    "otp": "123456",
+    "message": "OTP generated successfully"
+}
+```
+
+---
+
+## 5. Send Email
+**URL**: `POST /send-mail`  
+**Description**: Send an email  
+**Authentication**: Not required
+
+### Request Headers
+```
+Content-Type: application/json
+```
+
+### Request Body
+```json
+{
+    "to": "recipient@example.com",
+    "subject": "Test Email",
+    "text": "This is a test email"
+}
+```
+
+### Success Response (200)
+```json
+{
+    "status": true,
+    "message": "Email sent successfully"
+}
+```
+
+---
+
+## Error Responses
+
+### 400 Bad Request
+```json
+{
+    "status": false,
+    "message": "Validation error message"
+}
+```
+
+### 401 Unauthorized
+```json
+{
+    "status": false,
+    "message": "Authentication failed"
+}
+```
+
+### 404 Not Found
+```json
+{
+    "status": false,
+    "message": "User not found"
+}
+```
+
+### 500 Internal Server Error
+```json
+{
+    "status": false,
+    "message": "Internal server error"
+}
+```
+
+top se hai
+ED0956
+321A3E
+
+F04F82
+F10651
+
+1. front end register - dashboard
+2. edit and delete event
+3. all registration woring properly and count 
+4. vip guest awadees speaker all working properly and count
+
+
+
+
+
+
+
+
+
+

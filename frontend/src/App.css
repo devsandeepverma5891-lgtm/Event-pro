@@ -1,42 +1,49 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import "tailwindcss";
+
+*{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+::-webkit-scrollbar{ 
+    width:5px !important;
+    height: 5px !important;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+::-webkit-scrollbar-thumb{
+    background-color: rgb(196, 202, 202); 
+    /* border-radius: 5px;     */
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgb(16, 24, 40);     
+}
+
+.shape{
+    /* Rectangle 14066 */
+position: relative;
+width: 371.35px;
+height: 473.72px;
+left: 872.68px;
+top: 10092.87px;
+
+background: linear-gradient(180deg, #E78D05 0%, #EAB435 100%);
+border-radius: 20px;
+
+}
+
+.trapezoid {
+    background: linear-gradient(180deg, #E78D05 0%, #EAB435 100%);
+    width: 200px;
+    height: 250px;
+    clip-path: path("M20 30 Q20 0 50 5 L180 20 Q200 22 200 40 L200 230 Q200 250 180 245 L30 225 Q10 223 10 205 Z");
   }
-  to {
-    transform: rotate(360deg);
+
+  .trapezoid2 {
+    background: linear-gradient(180deg, #E78D05 0%, #EAB435 100%);
+    width: 200px;
+    left:10%;
+    height: 250px;
+    clip-path: path("M0 22  Q0 0 22 0 L160 0 Q180 0 180 20 L180 230 Q180 250 160 250 L20 220 Q0 210 0 190 Z");
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}

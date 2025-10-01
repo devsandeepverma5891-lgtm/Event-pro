@@ -1,0 +1,71 @@
+/* Modal overlay */
+.modal-overlay {
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+/* Modal content */
+.modal-content {
+  position: relative;
+  transform: translateY(20px);
+  transition: transform 200ms ease-in-out;
+  outline: none;
+  margin: auto;
+  max-height: 90vh;
+  max-width: 500px;
+  width: 100%;
+  border: none !important;
+  background: transparent !important;
+  inset: auto !important;
+  padding: 0 !important;
+  overflow: visible;
+}
+
+.ReactModal__Content--after-open {
+  transform: translateY(0);
+}
+
+.ReactModal__Content--before-close {
+  transform: translateY(20px);
+}
+
+/* Scrollbar styling for modal content */
+.modal-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: #2C2A2D;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background-color: #4B5563;
+  border-radius: 3px;
+}
+
+/* Focus styles for better accessibility */
+.modal-content *:focus-visible {
+  outline: 2px solid #3B82F6;
+  outline-offset: 2px;
+  border-radius: 0.25rem;
+}

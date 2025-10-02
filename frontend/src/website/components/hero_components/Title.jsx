@@ -23,7 +23,7 @@ const Title = () => {
             SUMAN TV's BIGGEST REAL ESTATE
             </span>
             <br />
-            <span className="bg-gradient-to-r from-[#FFBF15] to-[#F19306] bg-clip-text text-transparent text-5xl font-bold">
+            <span className="bg-gradient-to-r from-[#FFBF15] to-[#F19306] bg-clip-text text-transparent text-6xl font-bold">
              AWARDS SHOW & PROPERTY EXPO
              </span>
         </h1>

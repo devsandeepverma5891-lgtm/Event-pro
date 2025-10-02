@@ -5,16 +5,18 @@ const AboutSection = () => {
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12">
-          
-          {/* Left Content (take more width) */}
-          <div className="flex-1 lg:flex-[1.6] space-y-6">
-            <div>
-              <h2 className="text-4xl md:text-5xl font-bold text-[#F19306] mb-4">
+        <div>
+              <h2 className="text-2xl lg:text-4xl md:text-5xl font-bold text-[#F19306] mb-4">
                 Meet Our Visionary Leader
               </h2>
               <div className="w-24 h-1 bg-[#F19306] mb-8"></div>
             </div>
+        {/* Mobile: image first, content second | Large screen: content first, image second */}
+        <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-12">
+          
+          {/* Left Content (large screen me pehle) */}
+          <div className="flex-1 lg:flex-[1.6] space-y-6">
+            
             
             <div className="space-y-6 text-gray-700">
               <p className="text-sm leading-relaxed">
@@ -40,10 +42,9 @@ const AboutSection = () => {
             </div>
           </div>
           
-          {/* Right Image (take less width) */}
+          {/* Right Image (mobile me pehle show hoga) */}
           <div className="flex-1 lg:flex-[1] relative">
             <div className="relative">
-              {/* Suman Dudi's image */}
               <div className="w-full h-full mx-0 mb-6">
                 <img 
                   src={sumanDudiImage} 
@@ -52,7 +53,6 @@ const AboutSection = () => {
                 />
               </div>
               
-              {/* Name and Title */}
               <div className="text-left">
                 <h3 className="text-2xl font-bold text-dark mb-2">Suman Dudi</h3>
                 <p className="text-dark text-lg">Founder & Chairman of Suman TV Network</p>

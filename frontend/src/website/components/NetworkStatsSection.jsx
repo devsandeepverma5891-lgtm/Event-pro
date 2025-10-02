@@ -40,7 +40,7 @@ const NetworkStatsSection = () => {
         </h2>
 
         {/* Countries */}
-        <div className="bg-gradient-to-r from-[#F04F82] to-[#F10651] bg-clip-text text-transparent font-semibold space-x-6 mb-1 text-md tracking-wider">
+        <div className="max-w-sm text-center bg-gradient-to-r from-[#F04F82] to-[#F10651] bg-clip-text text-transparent font-semibold space-x-6 mb-1 text-md tracking-wider">
           <span>USA</span>
           <span>UAE</span>
           <span>AUSTRALIA</span>
@@ -54,7 +54,7 @@ const NetworkStatsSection = () => {
             <div className="flex w-full justify-around mb-10">
               {stats.slice(0, 2).map((stat) => (
                 <div key={stat.label} className="flex flex-col items-center px-6">
-                  <img src={stat.img} alt={stat.label} className="w-full h-32 mb-3" />
+                  <img src={stat.img} alt={stat.label} className="w-full h-22 lg:h-32 mb-3" />
                 </div>
               ))}
             </div>
@@ -77,7 +77,7 @@ const NetworkStatsSection = () => {
             <div className="flex w-full justify-around mt-14">
               {stats.slice(2, 4).map((stat) => (
                 <div key={stat.label} className="flex flex-col items-center px-6">
-                  <img src={stat.img} alt={stat.label} className="w-full h-32 mb-3" />
+                  <img src={stat.img} alt={stat.label} className="w-full h-22 mb-3" />
                 </div>
               ))}
             </div>
@@ -85,12 +85,12 @@ const NetworkStatsSection = () => {
         </div>
 
         {/* Footer stats */}
-        <div className="flex justify-evenly w-full mt-4">
-          <div>
+        <div className="flex flex-col justify-between lg:flex-row lg:justify-evenly w-full mt-4">
+          <div className="mb-10 lg:mb-0">
             <span className="bg-gradient-to-r from-[#E0BE7F] to-[#C99A17] bg-clip-text text-transparent text-5xl font-bold">10 Cr</span>
             <p className="text-white text-md font-medium">Viewership Per day</p>
           </div>
-          <div>
+          <div className="">
             <span className="bg-gradient-to-r from-[#E0BE7F] to-[#C99A17] bg-clip-text text-transparent text-5xl font-bold">10 Cr</span>
             <p className="text-white text-md font-medium">Subscribers & Followers</p>
           </div>

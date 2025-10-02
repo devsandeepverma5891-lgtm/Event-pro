@@ -21,11 +21,11 @@ const opportunities = [
 ];
 
 const OpportunitiesSection = () => (
-  <section className="py-5 lg:py-20 bg-white px-4 sm:px-6"> 
+  <section className="py-20 bg-white px-4 sm:px-6"> 
   <div className="max-w-7xl mx-auto">
     {/* Section Title */}
     <div className="text-center mb-8 md:mb-16">
-    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-4">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-4 break-words">
         Amazing Opportunities for Real Estate Firms
       </h2>
       <div className="w-24 h-1 bg-gradient-to-r from-[#EAB435] to-[#F19306] mx-auto"></div>
@@ -36,7 +36,7 @@ const OpportunitiesSection = () => (
         <img
           src={opportunitiesbanner}
           alt="Opportunities Banner"
-          className="rounded-xl shadow-lg object-cover w-full max-w-xs h-full sm:w-full sm:h-auto lg:w-full lg:h-full"
+          className="rounded-xl shadow-lg object-cover w-full max-w-xs h-40 sm:w-full sm:h-auto lg:w-full lg:h-full"
         />
       </div>
       {/* Right Side - Opportunities Grid */}

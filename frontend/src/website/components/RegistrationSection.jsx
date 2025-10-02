@@ -46,7 +46,7 @@ const RegistrationSection = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-[#EAB435] to-[#F19306] mx-auto"></div>
         </div>
         {/* Registration Cards */}
-        <div className="grid grid-cols-2 gap-4 max-w-xs mx-auto lg:mx-0 lg:max-w-none sm:grid-cols-2 lg:grid-cols-4 lg:gap-6 md:gap-8">
+        <div className="grid grid-cols-2 gap-4 max-w-xs mx-auto lg:mx-auto lg:max-w-6xl sm:grid-cols-2 lg:grid-cols-4 lg:gap-6 md:gap-8">
           {registrationOptions.map((option, index) => (
             <div
               key={index}

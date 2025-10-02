@@ -26,15 +26,15 @@ const AboutSection = () => {
                 <strong>Suman Dudi</strong> is the Founder & Chairman of Suman TV Network. In just nine years, 
                 Suman TV has become India's largest digital media network, transforming the digital content 
                 landscape with an astounding <strong>8-10 crore views per day</strong> and 
-                <strong>8 crore subscribers and followers</strong>.
+                <strong> 8 crore subscribers and followers</strong>.
               </p>
               
               <p className="text-sm leading-relaxed">
                 Suman TV's success is evident through <strong>over 100 YouTube awards</strong> for its 
                 high-quality content. The network covers diverse categories including News, Entertainment, 
                 Health, Bhakti, Politics, and Business, appealing to a broad audience. With 
-                <strong>over 100 branches across India</strong> and a 
-                <strong>global footprint</strong> including offices in the USA, Singapore, and Australia.
+                <strong> over 100 branches across India</strong> and a 
+                <strong> global footprint</strong> including offices in the USA, Singapore, and Australia.
               </p>
               
               <p className="text-sm leading-relaxed">

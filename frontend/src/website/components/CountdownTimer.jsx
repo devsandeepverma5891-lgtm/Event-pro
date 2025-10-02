@@ -44,11 +44,11 @@ const CountdownTimer = () => {
   ];
 
   return (
-    <div className="flex justify-center space-x-2 sm:space-x-4 mb-8 flex-wrap">
+    <div className="flex justify-center space-x-2 sm:space-x-4 mb-4 flex-wrap">
       {timeUnits.map((unit, index) => (
-        <div key={index} className="bg-gradient-to-b from-[#F04F82] to-[#F10651] border-2 border-amber-400 text-white text-center p-3 sm:p-4 rounded-lg min-w-[80px] sm:min-w-[100px] mb-2">
-          <div className="text-2xl sm:text-3xl font-bold">{unit.value.toString().padStart(2, '0')}</div>
-          <div className="text-xs sm:text-sm mt-1">{unit.label}</div>
+        <div key={index} className="bg-gradient-to-b from-[#F04F82] to-[#F10651] border-2 border-amber-400 text-white text-center p-2 sm:p-4 rounded-lg min-w-[80px] sm:min-w-[100px] mb-2">
+          <div className="text-2xl sm:text-2xl font-bold">{unit.value.toString().padStart(2, '0')}</div>
+          <div className="text-xs sm:text-xs mt-1">{unit.label}</div>
         </div>
       ))}
     </div>

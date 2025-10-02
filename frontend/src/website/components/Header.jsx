@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Building2 } from 'lucide-react';
+import { Building2, ChevronDown } from 'lucide-react';
 import logo from '../assets/logo.png';
 
 const Header = ({ onRegistrationClick }) => {
@@ -50,28 +50,21 @@ const Header = ({ onRegistrationClick }) => {
 
           {/* Logo */}
           <div className="flex flex-col items-center justify-center">
-            <img src={logo} alt="Logo" />
+            <img src={logo} alt="Logo" className="h-20 w-fit object-contain"/>
           </div>
 
           {/* Right Navigation */}
           <nav className="flex items-center space-x-8 justify-end">
-            <a href="#contact" className="hover:text-yellow-400 transition-colors">
+            <a href="#contact" className="hover:text-yellow-400 transition-colors text-sm font-semibold">
               CONTACT
             </a>
             <div className="relative">
               <button 
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                className="bg-gradient-to-b from-[#F04F82] to-[#F10651] hover:from-[#F10651] hover:to-[#F04F82] h-12 px-6 py-2 rounded text-white font-semibold transition-colors flex items-center gap-2"
+                className="bg-gradient-to-b from-[#F04F82] to-[#F10651] hover:from-[#F10651] hover:to-[#F04F82] px-6 py-3 rounded text-white font-semibold text-sm transition-colors flex items-center gap-2"
               >
                 REGISTER NOW
-                <svg 
-                  className={`w-4 h-4 transition-transform ${isDropdownOpen ? 'rotate-180' : ''}`}
-                  fill="none" 
-                  stroke="currentColor" 
-                  viewBox="0 0 24 24"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
+                <ChevronDown className="w-4 h-4" />
               </button>
               
               {isDropdownOpen && (

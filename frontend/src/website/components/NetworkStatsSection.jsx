@@ -1,7 +1,7 @@
 import React from 'react'
 import sumantvlogo from '../assets/logo_suman_tv.png'
 
-// Import icons from digitalmedia folder
+// Icons (as before)
 import img100 from '../assets/diditalmedia/100.png'
 import img150 from '../assets/diditalmedia/150.png'
 import img500 from '../assets/diditalmedia/500.png'
@@ -47,44 +47,37 @@ const NetworkStatsSection = () => {
           <span>SINGAPORE</span>
         </div>
 
-        {/* Flex Grid of stats */}
+        {/* Grid with stats */}
         <div className="flex flex-wrap justify-center items-center relative w-full my-26">
           <div className="flex flex-wrap w-full justify-center items-center">
             {/* Top row */}
             <div className="flex w-full justify-around mb-10">
               {stats.slice(0, 2).map((stat) => (
-                <div key={stat.label} className="flex flex-col items-center mx-6">
+                <div key={stat.label} className="flex flex-col items-center px-6">
                   <img src={stat.img} alt={stat.label} className="w-full h-32 mb-3" />
-                  {/* <span className="bg-gradient-to-t from-[#F04F82] to-[#F10651] bg-clip-text text-transparent text-4xl font-bold mb-1">
-                    {stat.value}
-                  </span>
-                  <span className="bg-gradient-to-t from-[#D5B452] to-[#8F6D26] bg-clip-text text-transparent text-md font-medium text-center">
-                    {stat.label}
-                  </span> */}
                 </div>
               ))}
             </div>
 
-            {/* Center logo */}
-            <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            {/* Plus (+) behind the logo */}
+            <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+              {/* Horizontal line */}
+              <div className="absolute left-1/2 top-1/2 w-3xl h-1 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-[#F4C264] via-[#F9E39A] to-[#CDA368] rounded-full z-0" />
+              {/* Vertical line */}
+              <div className="absolute left-1/2 top-1/2 h-96 w-1 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-b from-[#F4C264] via-[#F9E39A] to-[#CDA368] rounded-full z-0" />
+              {/* Center Logo */}
               <img
                 src={sumantvlogo}
                 alt="Suman TV Logo"
-                className="rounded-full border-4 border-yellow-300 bg-white w-20 h-20 shadow-lg mx-auto"
+                className="relative rounded-full border-4 border-yellow-300 bg-white w-20 h-20 shadow-lg mx-auto z-10"
               />
             </div>
 
             {/* Bottom row */}
             <div className="flex w-full justify-around mt-14">
               {stats.slice(2, 4).map((stat) => (
-                <div key={stat.label} className="flex flex-col items-center px-6 border-l-2 border-r-2 border-white">
+                <div key={stat.label} className="flex flex-col items-center px-6">
                   <img src={stat.img} alt={stat.label} className="w-full h-32 mb-3" />
-                  {/* <span className="bg-gradient-to-t from-[#F04F82] to-[#F10651] bg-clip-text text-transparent text-4xl font-bold mb-1">
-                    {stat.value}
-                  </span>
-                  <span className="bg-gradient-to-t from-[#D5B452] to-[#8F6D26] bg-clip-text text-transparent text-md font-medium text-center">
-                    {stat.label}
-                  </span> */}
                 </div>
               ))}
             </div>

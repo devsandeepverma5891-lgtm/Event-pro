@@ -26,7 +26,7 @@ const EventHighlightsSection = () => {
           {/* Section Title */}
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-4">
-            Suman TV Digital Offerings
+            EVENT HIGHLIGHTS
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-[#EAB435] to-[#F19306] mx-auto"></div>
         </div>

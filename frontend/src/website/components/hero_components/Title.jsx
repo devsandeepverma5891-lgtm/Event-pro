@@ -6,7 +6,7 @@ const Title = () => {
 
   const Badge = () => {
     return (
-      <span className="px-3 py-1 rounded-full mb-4 bg-gradient-to-b from-[#E0BE7F] to-[#C99A17] text-black inline-flex items-center text-md font-semibold transition-colors ">
+      <span className="px-3 py-1 rounded-full bg-gradient-to-b from-[#E0BE7F] to-[#C99A17] text-black inline-flex items-center text-md font-semibold transition-colors ">
         <Calendar className="w-4 h-4 mr-2" /> October 18-19, 2025
       </span>
     );
@@ -20,34 +20,27 @@ const Title = () => {
         {/* Main Title */}
         <h1 className="leading-tight mb-6">
             <span className="text-white text-4xl font-normal mb-5">
-            SUMAN TV's BIGGEST
+            SUMAN TV's BIGGEST REAL ESTATE
             </span>
             <br />
-            <span className="bg-gradient-to-r from-[#FFBF15] to-[#F19306] bg-clip-text text-transparent text-6xl font-bold">
-            REAL ESTATE AWARDS SHOW
-            </span>
-            <br />
-            <span className="bg-gradient-to-r from-[#FFBF15] to-[#F19306] bg-clip-text text-transparent text-6xl font-bold">
-            &
-            </span>
-            <br />
-            <span className="bg-gradient-to-r from-[#FFBF15] to-[#F19306] bg-clip-text text-transparent text-6xl font-bold">
-            PROPERTY EXPO.
-            </span>
+            <span className="bg-gradient-to-r from-[#FFBF15] to-[#F19306] bg-clip-text text-transparent text-5xl font-bold">
+             AWARDS SHOW & PROPERTY EXPO
+             </span>
         </h1>
         
         
         {/* Subtitle */}
-        <p className="text-lg sm:text-xl md:text-2xl mb-8 md:mb-12 text-white">
-          AT NOVOTEL, HICC, HYDERABAD
-        </p>
-        {Badge()}
+        <div className="flex items-center justify-center mb-4 ">
+        {Badge()} 
+        <span className="text-lg sm:text-xl md:text-1xl text-white ml-4"> AT NOVOTEL, HICC, HYDERABAD</span>
+        </div>
+       
         
         {/* Countdown Timer */}
         <CountdownTimer />
         
         {/* Register Button */}
-        <button className="bg-gradient-to-r from-[#FFBF15] to-[#F19306] text-white font-bold py-5 px-10 md:py-4 md:px-12 rounded-lg text-lg md:text-xl transition-colors shadow-lg">
+        <button className="bg-gradient-to-r from-[#FFBF15] to-[#F19306] text-white font-bold py-5 px-10 md:py-3 md:px-12 rounded-lg text-lg md:text-xl transition-colors shadow-lg">
           REGISTER FOR AWARD
         </button>
       </div>

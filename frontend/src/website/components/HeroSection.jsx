@@ -4,7 +4,7 @@ import bannerIMG from "../assets/banner.png";
 
 const HeroSection = () => {
   return (
-    <section className="relative py-32 lg:py-48 overflow-hidden">
+    <section className="relative py-20 lg:py-40 overflow-hidden">
       <div className="absolute inset-0">
         <img
           src={bannerIMG}

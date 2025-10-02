@@ -4,12 +4,6 @@ import { Calendar } from 'lucide-react';
 
 const Title = () => {
 
-  // const Badge = () => {
-  //   return (
-      
-  //   );
-  // };
-  
   
   return (
     <div>
@@ -17,7 +11,7 @@ const Title = () => {
       <div className="relative z-10 text-center text-white px-6 max-w-6xl mx-auto">
         {/* Main Title */}
         <h1 className="leading-tight mb-6">
-            <span className="text-white lg:text-4xl text-2xl font-normal lg:mb-5 mb-10">
+            <span className="text-white lg:text-4xl text-md font-normal lg:mb-5 mb-5">
             SUMAN TV's BIGGEST REAL ESTATE
             </span>
             <br />

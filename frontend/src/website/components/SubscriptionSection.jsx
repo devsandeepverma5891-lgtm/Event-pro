@@ -1,8 +1,9 @@
 import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 import { Crown, Star, Trophy, Medal } from 'lucide-react';
 import subscriptionbg from '../assets/subscription/subscription-bg.png';
 import SubscriptionCard from './utils/SubscriptionCard';
-
 
 const packages = [
   {
@@ -62,7 +63,7 @@ const packages = [
 ];
 
 const SubscriptionSection = () => (
-  <section className="relative py-0 lg:py-20 overflow-hidden">
+  <section className="relative py-15 lg:py-20 overflow-hidden">
     {/* Background */}
     <div className="absolute inset-0">
       <img
@@ -78,16 +79,32 @@ const SubscriptionSection = () => (
       {/* Section Title */}
       <div className="text-center mb-12 md:mb-16">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">
-        EVENT PACKAGES - DELIVERABLES
+          EVENT PACKAGES - DELIVERABLES
         </h2>
         <div className="w-24 h-1 bg-gradient-to-r from-[#EAB435] to-[#F19306] mx-auto"></div>
       </div>
 
       {/* Package cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7 max-w-6xl mx-auto">
+      {/* Desktop Grid */}
+      <div className="hidden sm:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7 max-w-6xl mx-auto">
         {packages.map((pkg, i) => (
           <SubscriptionCard key={i} {...pkg} />
         ))}
+      </div>
+
+      {/* Mobile Swiper */}
+      <div className="sm:hidden px-4">
+        <Swiper
+          spaceBetween={15}
+          slidesPerView={1.2}
+          centeredSlides={false}
+        >
+          {packages.map((pkg, i) => (
+            <SwiperSlide key={i} className="w-full py-5">
+              <SubscriptionCard {...pkg} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </div>
   </section>

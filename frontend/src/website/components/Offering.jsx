@@ -41,12 +41,12 @@ const Offering = () => (
           {digitalOfferings.map((item, index) => (
             <div
               key={index}
-              className="bg-[#2D2A35] rounded-xl p-6 text-center hover:bg-gray-700 transition-all duration-300 hover:transform hover:scale-105"
+              className="bg-[#2D2A35] rounded-xl lg:p-6 p-4 py-6 text-center hover:bg-gray-700 transition-all duration-300 hover:transform hover:scale-105"
             >
               <div className="w-16 h-16 bg-[#EFB314] rounded-full flex items-center justify-center mx-auto mb-4">
                 <img src={item.icon} alt={item.title + " icon"} className="w-8 h-8 object-contain" />
               </div>
-              <h3 className="text-white font-semibold text-sm leading-tight">
+              <h3 className="text-white font-semibold text-[0.6em] leading-tight">
                 {item.title}
               </h3>
             </div>

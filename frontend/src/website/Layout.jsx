@@ -12,6 +12,7 @@ import EventScheduleSection from './components/EventScheduleSection'
 import FooterSection from './components/FooterSection'
 import PropertySection from './components/PropertySection'
 import ShowcaseSection from './components/ShowcaseSection'
+import EventHighlightsSection from './components/EventHighlightsSection'
 import NetworkStatsSection from './components/NetworkStatsSection'
 import Offering from './components/Offering'
 import RegistrationModal from './components/RegistrationModal'
@@ -44,6 +45,7 @@ const Layout = () => {
       <PropertySection />
       <OpportunitiesSection />
       <ShowcaseSection />
+      <EventHighlightsSection />
       <NetworkStatsSection />
       {/* <EventScheduleSection /> */}
       <Offering />

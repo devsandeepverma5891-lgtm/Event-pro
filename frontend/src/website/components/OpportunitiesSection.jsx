@@ -21,8 +21,8 @@ const opportunities = [
 ];
 
 const OpportunitiesSection = () => (
-  <section className="py-20 bg-white px-4 sm:px-6"> 
-  <div className="max-w-7xl mx-auto">
+  <section className="py-20 lg:py-20 bg-white px-4 sm:px-6"> 
+  <div className="max-w-7xl mx-auto px-4 lg:px-6">
     {/* Section Title */}
     <div className="text-center mb-8 md:mb-16">
       <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-4 break-words">
@@ -32,13 +32,13 @@ const OpportunitiesSection = () => (
     </div>
     <div className="flex flex-col lg:flex-row items-center lg:items-start gap-5">
       {/* Left Side - Banner Image */}
-      <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
-        <img
-          src={opportunitiesbanner}
-          alt="Opportunities Banner"
-          className="rounded-xl shadow-lg object-cover w-full max-w-xs h-full sm:w-full sm:h-auto lg:w-full lg:h-full"
-        />
-      </div>
+      <div className="w-full lg:w-1/2 flex justify-start">
+          <img
+            src={opportunitiesbanner}
+            alt="Opportunities Banner"
+            className="rounded-xl shadow-lg object-cover w-[320px] h-full lg:w-full lg:h-full"
+          />
+        </div>
       {/* Right Side - Opportunities Grid */}
       <div className="w-full lg:w-1/2 grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-6">
         {opportunities.map((op, idx) => (

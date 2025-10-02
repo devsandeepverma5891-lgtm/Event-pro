@@ -6,7 +6,7 @@ const AwardsSection = () => {
   return (
     <section className="py-5 lg:py-20 bg-white">
       {/* Desktop View */}
-      <div className="hidden lg:block max-w-7xl mx-auto px-6">
+      <div className="hidden lg:block max-w-7xl mx-auto px-12">
         <div className="rounded-3xl overflow-hidden shadow-lg">
           <img
             src={awardforexcellence}

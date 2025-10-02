@@ -81,7 +81,7 @@ const SubscriptionCard = ({
         </button>
         <button 
           onClick={handleEnquireClick}
-          className="w-full transition bg-gradient-to-b from-[#F04F82] to-[#F10651] hover:from-[#F10651] hover:to-[#F04F82] rounded-md py-3 text-base font-bold text-white shadow-md"
+          className="w-full transition bg-gradient-to-b from-[#F04F82] to-[#F10651] hover:from-[#F10651] hover:to-[#F04F82] rounded-md py-3 text-base font-medium text-white shadow-md"
         >
           Enquire Now
         </button>

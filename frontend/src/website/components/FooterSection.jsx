@@ -4,7 +4,7 @@ import sumantvlogo from '../assets/logo_suman_tv.png';
 
 const FooterSection = () => (
   <footer className="bg-black text-white pt-16 pb-8 px-4">
-    <div className="max-w-7xl mx-auto px-6">
+    <div className="max-w-7xl mx-auto px-4 lg:px-10">
         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12">
           
           {/* Left Content (take more width) */}

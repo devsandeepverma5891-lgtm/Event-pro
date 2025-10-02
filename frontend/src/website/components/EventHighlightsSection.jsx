@@ -22,7 +22,7 @@ const EventHighlightsSection = () => {
   ];
   return (
     <section className="lg:py-20 py-5 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-4 lg:px-10">
           {/* Section Title */}
         
         <div className="text-center mb-8 md:mb-16">

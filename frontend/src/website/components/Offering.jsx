@@ -27,7 +27,7 @@ const digitalOfferings = [
 const Offering = () => (
   <section className="relative py-0 lg:py-0 overflow-hidden bg-[#201E27]">
     <div className="py-20 bg-gray-900">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 lg:px-10">
         {/* Section Title */}
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">

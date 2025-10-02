@@ -4,7 +4,7 @@ import sumanDudiImage from '../assets/sumandudi.png';
 const AboutSection = () => {
   return (
     <section className="py-15 lg:py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 lg:px-10">
         <div className="block lg:hidden md:hidden sm:hidden">
           <h2 className="text-2xl lg:text-4xl md:text-5xl font-bold text-[#F19306] mb-4">
             Meet Our Visionary Leader

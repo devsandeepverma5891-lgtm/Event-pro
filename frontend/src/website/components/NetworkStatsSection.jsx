@@ -33,6 +33,7 @@ const stats = [
 const NetworkStatsSection = () => {
   return (
     <section className="relative py-0 lg:py-0 overflow-hidden bg-black">
+      <div className="max-w-7xl mx-auto px-4 lg:px-6">
       <div className="text-center mb-12 md:mb-16 py-15">
         {/* Title */}
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-[#F4C264] to-[#CDA368] bg-clip-text text-transparent mb-4">
@@ -40,7 +41,7 @@ const NetworkStatsSection = () => {
         </h2>
 
         {/* Countries */}
-        <div className="max-w-sm text-center bg-gradient-to-r from-[#F04F82] to-[#F10651] bg-clip-text text-transparent font-semibold space-x-6 mb-1 text-md tracking-wider">
+        <div className="text-center bg-gradient-to-r from-[#F04F82] to-[#F10651] bg-clip-text text-transparent font-semibold space-x-6 mb-1 text-md tracking-wider">
           <span>USA</span>
           <span>UAE</span>
           <span>AUSTRALIA</span>
@@ -95,6 +96,7 @@ const NetworkStatsSection = () => {
             <p className="text-white text-md font-medium">Subscribers & Followers</p>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

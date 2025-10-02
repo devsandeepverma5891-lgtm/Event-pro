@@ -75,7 +75,7 @@ const SubscriptionSection = () => (
     </div>
 
     {/* Content */}
-    <div className="relative z-10">
+    <div className="relative z-10 max-w-7xl mx-auto lg:px-10">
       {/* Section Title */}
       <div className="text-center mb-12 md:mb-16">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">

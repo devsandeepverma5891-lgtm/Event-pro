@@ -50,10 +50,7 @@ const Layout = () => {
       {/* <EventScheduleSection /> */}
       <Offering />
       <AboutSection />
-      <SubscriptionSection />
-      
-      
-      
+      <SubscriptionSection />    
       <FooterSection />
       
       {/* Registration Modal */}

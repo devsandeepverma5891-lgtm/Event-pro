@@ -37,7 +37,7 @@ const RegistrationSection = () => {
 
   return (
     <section className="py-5 lg:py-20 bg-white">
-      <div className="lg:max-w-7xl mx-auto lg:px-6">
+      <div className="lg:max-w-7xl mx-auto lg:px-12">
         {/* Section Title */}
         <div className="text-center mb-8 md:mb-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-4">

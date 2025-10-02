@@ -3,9 +3,9 @@ import sumanDudiImage from '../assets/sumandudi.png';
 
 const AboutSection = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-15 lg:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
-        <div>
+            <div className="block lg:hidden md:hidden sm:hidden">
               <h2 className="text-2xl lg:text-4xl md:text-5xl font-bold text-[#F19306] mb-4">
                 Meet Our Visionary Leader
               </h2>
@@ -15,10 +15,15 @@ const AboutSection = () => {
         <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-12">
           
           {/* Left Content (large screen me pehle) */}
-          <div className="flex-1 lg:flex-[1.6] space-y-6">
+          <div className="flex-1 lg:flex-[1.6] lg:space-y-6 space-y-2">
+            <div className="hidden lg:block md:block sm:block">
+              <h2 className="text-2xl lg:text-4xl md:text-5xl font-bold text-[#F19306] mb-4">
+                Meet Our Visionary Leader
+              </h2>
+              <div className="w-24 h-1 bg-[#F19306] mb-8"></div>
+            </div>
             
-            
-            <div className="space-y-6 text-gray-700">
+            <div className="lg:space-y-6 space-y-2 text-gray-700">
               <p className="text-sm leading-relaxed">
                 <strong>Suman Dudi</strong> is the Founder & Chairman of Suman TV Network. In just nine years, 
                 Suman TV has become India's largest digital media network, transforming the digital content 

@@ -36,7 +36,7 @@ const OpportunitiesSection = () => (
         <img
           src={opportunitiesbanner}
           alt="Opportunities Banner"
-          className="rounded-xl shadow-lg object-cover w-full max-w-xs h-40 sm:w-full sm:h-auto lg:w-full lg:h-full"
+          className="rounded-xl shadow-lg object-cover w-full max-w-xs h-full sm:w-full sm:h-auto lg:w-full lg:h-full"
         />
       </div>
       {/* Right Side - Opportunities Grid */}

@@ -7,7 +7,7 @@ const Title = () => {
   const Badge = () => {
     return (
       <span className="px-3 py-1 rounded-full mb-4 bg-gradient-to-b from-[#E0BE7F] to-[#C99A17] text-black inline-flex items-center text-md font-semibold transition-colors ">
-        <Calendar className="w-4 h-4 mr-2" /> October 18-20, 2025
+        <Calendar className="w-4 h-4 mr-2" /> October 18-19, 2025
       </span>
     );
   };
@@ -19,12 +19,20 @@ const Title = () => {
       <div className="relative z-10 text-center text-white px-6 max-w-6xl mx-auto">
         {/* Main Title */}
         <h1 className="leading-tight mb-6">
-            <span className="text-white text-5xl font-normal mb-5">
-            SUMAN TV'S BIGGEST REAL ESTATE
+            <span className="text-white text-4xl font-normal mb-5">
+            SUMAN TV's BIGGEST
             </span>
             <br />
-            <span className="bg-gradient-to-r from-[#FFBF15] to-[#F19306] bg-clip-text text-transparent text-7xl font-bold">
-            AWARDS & PROPERTY SHOW
+            <span className="bg-gradient-to-r from-[#FFBF15] to-[#F19306] bg-clip-text text-transparent text-6xl font-bold">
+            REAL ESTATE AWARDS SHOW
+            </span>
+            <br />
+            <span className="bg-gradient-to-r from-[#FFBF15] to-[#F19306] bg-clip-text text-transparent text-6xl font-bold">
+            &
+            </span>
+            <br />
+            <span className="bg-gradient-to-r from-[#FFBF15] to-[#F19306] bg-clip-text text-transparent text-6xl font-bold">
+            PROPERTY EXPO.
             </span>
         </h1>
         

@@ -5,16 +5,16 @@ const AboutSection = () => {
   return (
     <section className="py-15 lg:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
-            <div className="block lg:hidden md:hidden sm:hidden">
-              <h2 className="text-2xl lg:text-4xl md:text-5xl font-bold text-[#F19306] mb-4">
-                Meet Our Visionary Leader
-              </h2>
-              <div className="w-24 h-1 bg-[#F19306] mb-8"></div>
-            </div>
-        {/* Mobile: image first, content second | Large screen: content first, image second */}
+        <div className="block lg:hidden md:hidden sm:hidden">
+          <h2 className="text-2xl lg:text-4xl md:text-5xl font-bold text-[#F19306] mb-4">
+            Meet Our Visionary Leader
+          </h2>
+          <div className="w-24 h-1 bg-[#F19306] mb-8"></div>
+        </div>
+
         <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-12">
           
-          {/* Left Content (large screen me pehle) */}
+          
           <div className="flex-1 lg:flex-[1.6] lg:space-y-6 space-y-2">
             <div className="hidden lg:block md:block sm:block">
               <h2 className="text-2xl lg:text-4xl md:text-5xl font-bold text-[#F19306] mb-4">
@@ -45,9 +45,20 @@ const AboutSection = () => {
                 digital media.
               </p>
             </div>
+
+            {/* YouTube Video */}
+          <div className="mt-10 w-full aspect-video max-w-4xl mx-auto">
+            <iframe
+              className="w-full h-full rounded-xl shadow-lg"
+              src="https://www.youtube.com/embed/qoFZ3wCzWsk"
+              title="Suman TV YouTube Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
           </div>
           
-          {/* Right Image (mobile me pehle show hoga) */}
           <div className="flex-1 lg:flex-[1] relative">
             <div className="relative">
               <div className="w-full h-full mx-0 mb-6">
@@ -66,6 +77,7 @@ const AboutSection = () => {
           </div>
           
         </div>
+
       </div>
     </section>
   );

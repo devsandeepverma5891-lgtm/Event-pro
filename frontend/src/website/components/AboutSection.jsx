@@ -13,8 +13,6 @@ const AboutSection = () => {
         </div>
 
         <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-12">
-          
-          
           <div className="flex-1 lg:flex-[1.6] lg:space-y-6 space-y-2">
             <div className="hidden lg:block md:block sm:block">
               <h2 className="text-2xl lg:text-4xl md:text-5xl font-bold text-[#F19306] mb-4">
@@ -48,6 +46,9 @@ const AboutSection = () => {
 
             {/* YouTube Video */}
           <div className="mt-10 w-full aspect-video max-w-4xl mx-auto">
+            <h2 className="text-md lg:text-lg font-bold text-[#F19306] mb-4">
+            Watch Doctors Awards Event 2025
+            </h2>
             <iframe
               className="w-full h-full rounded-xl shadow-lg"
               src="https://www.youtube.com/embed/qoFZ3wCzWsk"

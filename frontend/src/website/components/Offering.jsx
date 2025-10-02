@@ -46,7 +46,7 @@ const Offering = () => (
               <div className="w-16 h-16 bg-[#EFB314] rounded-full flex items-center justify-center mx-auto mb-4">
                 <img src={item.icon} alt={item.title + " icon"} className="w-8 h-8 object-contain" />
               </div>
-              <h3 className="text-white font-semibold text-[0.6em] leading-tight">
+              <h3 className="text-white font-semibold text-[0.6em] lg:text-[0.8em] leading-tight">
                 {item.title}
               </h3>
             </div>

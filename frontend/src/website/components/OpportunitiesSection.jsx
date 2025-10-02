@@ -21,39 +21,40 @@ const opportunities = [
 ];
 
 const OpportunitiesSection = () => (
-  <section className="py-20 bg-white">
-    <div className="max-w-7xl mx-auto px-6">
-      {/* Section Title */}
-      <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-4">
-          Amazing Opportunities for Real Estate Firms
-          </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#EAB435] to-[#F19306] mx-auto"></div>
+  <section className="py-5 lg:py-20 bg-white px-4 sm:px-6"> 
+  <div className="max-w-7xl mx-auto">
+    {/* Section Title */}
+    <div className="text-center mb-8 md:mb-16">
+    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-4">
+        Amazing Opportunities for Real Estate Firms
+      </h2>
+      <div className="w-24 h-1 bg-gradient-to-r from-[#EAB435] to-[#F19306] mx-auto"></div>
+    </div>
+    <div className="flex flex-col lg:flex-row items-center lg:items-start gap-5">
+      {/* Left Side - Banner Image */}
+      <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
+        <img
+          src={opportunitiesbanner}
+          alt="Opportunities Banner"
+          className="rounded-xl shadow-lg object-cover w-full max-w-xs h-full sm:w-full sm:h-auto lg:w-full lg:h-full"
+        />
       </div>
-      <div className="flex flex-col lg:flex-row items-start gap-5">
-        {/* Left Side - Banner Image */}
-        <div className="w-full lg:w-1/2 flex justify-start">
-          <img
-            src={opportunitiesbanner}
-            alt="Opportunities Banner"
-            className="rounded-xl shadow-lg object-cover w-[320px] h-full lg:w-full lg:h-full"
-          />
-        </div>
-        {/* Right Side - Opportunities Grid */}
-        <div className="w-full lg:w-1/2 grid grid-cols-3 gap-6">
-          {opportunities.map((op, idx) => (
-            <div
-              key={idx}
-              className="bg-white border-1 border-[#F19306] rounded-xl p-6 flex flex-col items-start hover:border-pink-400 transition"
-            >
-              <img src={op.img} alt={op.title} className="w-12 h-12 mb-3 object-contain" />
-              <span className="text-base font-semibold text-gray-700 text-start">{op.title}</span>
-            </div>
-          ))}
-        </div>
+      {/* Right Side - Opportunities Grid */}
+      <div className="w-full lg:w-1/2 grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-6">
+        {opportunities.map((op, idx) => (
+          <div
+            key={idx}
+            className="bg-white border border-[#F19306] rounded-xl p-4 sm:p-6 flex flex-col items-center sm:items-start text-center sm:text-left hover:border-pink-400 transition"
+          >
+            <img src={op.img} alt={op.title} className="w-10 h-10 mb-3 object-contain" />
+            <span className="text-base font-semibold text-gray-700">{op.title}</span>
+          </div>
+        ))}
       </div>
     </div>
+  </div>
   </section>
+
 );
 
 export default OpportunitiesSection;

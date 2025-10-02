@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Building2, ChevronDown } from 'lucide-react';
+import { Building2, ChevronDown, Menu } from 'lucide-react';
 import logo from '../assets/logo.png';
 
 const Header = ({ onRegistrationClick }) => {
@@ -105,16 +105,37 @@ const Header = ({ onRegistrationClick }) => {
         </div>
 
         {/* Mobile Layout */}
-        <div className="lg:hidden flex items-center justify-between">
-          {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <Building2 className="h-6 w-6 text-yellow-400" />
-            <h1 className="text-lg font-bold text-yellow-400">BUILDER AWARDS</h1>
+        <div className="lg:hidden relative flex items-center justify-center h-24">
+          {/* Hamburger Menu */}
+          <button
+            className="absolute left-0 top-1/2 -translate-y-1/2 px-2"
+            aria-label="Open Menu"
+            // onClick={openMobileMenu}
+          >
+            <Menu className="h-7 w-7 text-white" />
+          </button>
+          {/* Center Logo */}
+          <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 flex flex-col items-center">
+            <img src={logo} alt="Logo" className="h-16 w-auto object-contain mx-auto" />
+            <span className="text-sm mt-1 text-yellow-400 tracking-wide font-semibold">BUILDER AWARDS</span>
           </div>
-
-          {/* Register Button */}
-          <button className="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded text-sm transition-colors">
-            REGISTER
+          {/* Vertical Register Button */}
+          <button
+            onClick={() => onRegistrationClick()}
+            className="absolute right-0 top-1/2 -translate-y-1/2 px-0 py-0"
+            style={{
+              writingMode: 'vertical-rl',
+              transform: 'rotate(180deg)',
+              background: 'linear-gradient(180deg, #F04F82 0%, #F10651 100%)',
+              color: 'white',
+              borderRadius: '10px',
+              fontWeight: 600,
+              fontSize: '1rem',
+              padding: '0.5rem 0.7rem',
+              letterSpacing: '0.1em'
+            }}
+          >
+            REGISTER NOW
           </button>
         </div>
 

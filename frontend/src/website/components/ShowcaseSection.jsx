@@ -3,7 +3,7 @@ import showcasestage from '../assets/showcase/showcasestagedrk.png';
 import middleimage from '../assets/showcase/cityline.png';
 const ShowcaseSection = () => {
   return (
-    <section className="relative py-0 lg:py-0 lg:pt-48 overflow-hidden">
+    <section className="relative pt-16 lg:py-0 lg:pt-48 overflow-hidden">
       <div className="absolute inset-0">
         <img
           src={showcasestage}

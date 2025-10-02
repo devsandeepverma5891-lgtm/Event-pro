@@ -19,10 +19,12 @@ const Title = () => {
       <div className="relative z-10 text-center text-white px-6 max-w-6xl mx-auto">
         {/* Main Title */}
         <h1 className="leading-tight mb-6">
-            <span className="text-white text-5xl font-normal mb-5">INDIA'S BIGGEST</span>
+            <span className="text-white text-5xl font-normal mb-5">
+            SUMAN TV'S BIGGEST REAL ESTATE
+            </span>
             <br />
             <span className="bg-gradient-to-r from-[#FFBF15] to-[#F19306] bg-clip-text text-transparent text-7xl font-bold">
-                BUILDER AWARDS
+            AWARDS & PROPERTY SHOW
             </span>
         </h1>
         

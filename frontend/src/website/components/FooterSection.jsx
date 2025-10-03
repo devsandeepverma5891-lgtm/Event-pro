@@ -74,13 +74,15 @@ const FooterSection = () => (
           {/* Right Image (take less width) */}
           <div className="flex-1 lg:flex-[1.6] space-y-6">
             <div className="relative">
-            <h2 className="text-2xl md:text-3xl font-bold mb-1">Suman TV Builder Awards</h2>
+            <h2 className="text-xl md:text-2xl font-bold mb-1">
+              Watch Our Doctors Awards Event 2025
+            </h2>
         <div className="w-24 h-1 bg-[#F19306] mb-8"></div>
 
         <div className="flex items-center mb-5 text-base font-normal justify-between flex-wrap gap-4">
           <div className="flex items-center bg-gradient-to-t from-[#D5B452] to-[#8F6D26] bg-clip-text text-transparent text-md font-medium text-start">
             <Calendar className="w-6 h-6 mr-2 text-[#8F6D26]" />
-            <h6 className="mr-7">15 June, 2025</h6>
+            <h6 className="mr-7">October 18-19, 2025</h6>
           </div>
           <div className="flex items-center bg-gradient-to-t from-[#D5B452] to-[#8F6D26] bg-clip-text text-transparent text-md font-medium text-start">
             <MapPin className="w-6 h-6 mr-2 text-[#8F6D26]" />
@@ -92,7 +94,7 @@ const FooterSection = () => (
         <div className="flex items-center mb-8 text-base font-normal justify-between flex-wrap gap-4">
           <div className="flex items-center bg-gradient-to-t from-[#D5B452] to-[#8F6D26] bg-clip-text text-transparent text-md font-medium text-start">
             <Mail className="w-6 h-6 mr-2 text-[#8F6D26]" />
-            <h6 className="mr-8">doctorawards@sumantv.com</h6>
+            <h6 className="mr-8">events@sumantv.com</h6>
           </div>
           <div className="flex items-center justify-start bg-gradient-to-t from-[#D5B452] to-[#8F6D26] bg-clip-text text-transparent text-md font-medium text-start">
             <Phone className="w-6 h-6 mr-2 text-[#8F6D26]" />

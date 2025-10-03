@@ -17,7 +17,7 @@ const EventHighlightsSection = () => {
     { title: "200+ COMPANIES PARTICIPATING", img: companiesparticipating },
     { title: "20+ AWARD CATEGORIES", img: awardscategory },
     { title: "10,000+ EXPECTED ATTENDEES", img: expectedattendees },
-    { title: "3 DAYS OF INNOVATION", img: daysofinnovation },
+    { title: "2 DAYS OF INNOVATION", img: daysofinnovation },
     { title: "NETWORKING OPPORTUNITIES", img: networkingopportunities },
   ];
   return (

@@ -39,7 +39,7 @@ const Layout = () => {
   return (
     <div className="min-h-screen">
       <Header onRegistrationClick={handleRegistrationClick} />
-      <HeroSection />
+      <HeroSection onRegistrationClick={handleRegistrationClick} />
       <RegistrationSection />
       <AwardsSection />
       <PropertySection />

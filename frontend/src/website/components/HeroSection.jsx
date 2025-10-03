@@ -2,7 +2,7 @@ import React from "react";
 import Title from "./hero_components/Title";
 import bannerIMG from "../assets/banner.png";
 
-const HeroSection = () => {
+const HeroSection = ({ onRegistrationClick }) => {
   return (
     <section className="relative py-40 lg:py-40 overflow-hidden">
       <div className="absolute inset-0">
@@ -14,7 +14,7 @@ const HeroSection = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#321A3E] via-[#ED0956] to-transparent opacity-10"></div>
       </div>
-      <Title />
+      <Title onRegistrationClick={onRegistrationClick} />
     </section>
   );
 };

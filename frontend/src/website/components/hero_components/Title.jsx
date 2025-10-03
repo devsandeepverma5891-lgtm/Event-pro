@@ -2,8 +2,11 @@ import React from 'react'
 import CountdownTimer from '../CountdownTimer'
 import { Calendar } from 'lucide-react';
 
-const Title = () => {
+const Title = ({ onRegistrationClick }) => {
 
+  const handleDropdownClick = (type) => {
+    onRegistrationClick(type);
+  };
   
   return (
     <div>
@@ -38,7 +41,9 @@ const Title = () => {
         <CountdownTimer />
         
         {/* Register Button */}
-        <button className="bg-gradient-to-r from-[#FFBF15] to-[#F19306] text-white font-bold 
+        <button 
+        onClick={() => handleDropdownClick("Awards Registration")}
+        className="bg-gradient-to-r from-[#FFBF15] to-[#F19306] text-white font-bold 
         py-4 px-6
         lg:py-5 lg:px-10 md:py-3 md:px-12 
         rounded-lg text-lg md:text-xl transition-colors shadow-lg">

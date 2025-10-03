@@ -1,4 +1,4 @@
-import AwardeeVip from "../models/Awardeevipmodel.js";
+import AwardeeVip from "../models/AwardeeVipmodel.js";
 
 // CREATE AwardeeVip
 export const createAwardeeVip = async (req, res) => {

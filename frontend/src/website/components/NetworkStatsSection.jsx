@@ -41,7 +41,7 @@ const NetworkStatsSection = () => {
         </h2>
 
         {/* Countries */}
-        <div className="text-center bg-gradient-to-r from-[#F04F82] to-[#F10651] bg-clip-text text-transparent font-semibold space-x-6 mb-1 text-md tracking-wider">
+        <div className="text-center bg-gradient-to-r from-[#F04F82] to-[#F10651] bg-clip-text text-transparent font-semibold space-x-6 mb-1 lg:text-md text-sm tracking-wider">
           <span>USA</span>
           <span>UAE</span>
           <span>AUSTRALIA</span>

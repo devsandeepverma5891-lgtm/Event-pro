@@ -46,28 +46,28 @@ const RegistrationSection = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-[#EAB435] to-[#F19306] mx-auto"></div>
         </div>
         {/* Registration Cards */}
-        <div className="grid grid-cols-2 gap-4 max-w-xs mx-auto lg:mx-auto lg:max-w-6xl sm:grid-cols-2 lg:grid-cols-4 lg:gap-6 md:gap-8">
+        <div className="grid grid-cols-2 gap-4 max-w-xs mx-auto lg:mx-auto lg:max-w-6xl sm:grid-cols-2 lg:grid-cols-4 lg:gap-4 md:gap-4">
           {registrationOptions.map((option, index) => (
             <div
               key={index}
               className="bg-gradient-to-b from-[#000000] to-[#2C2A2D] text-white rounded-2xl 
               pt-10 pb-5 px-2
-lg:py-7 lg:px-3 flex flex-col items-center justify-between"
+lg:py-12 lg:px-6 flex flex-col items-center justify-between"
             >
               {/* Image */}
               <div className="flex justify-center mb-2">
                 <img
                   src={option.img}
                   alt={option.title}
-                  className="h-8 w-8 lg:h-12 lg:w-12 object-contain mb-2"
+                  className="h-8 w-8 lg:h-14 lg:w-14 object-contain mb-2"
                 />
               </div>
               {/* Title */}
-              <h5 className="lg:text-[1rem] text-[0.8rem] font-semibold text-center mb-2">
+              <h5 className="lg:text-[1.2rem] text-[0.8rem] font-semibold text-center mb-2">
                 {option.title}
               </h5>
               {/* Description */}
-              <p className="lg:text-[0.95rem] text-[0.69rem] font-normal text-gray-300 text-center mb-5">
+              <p className="lg:text-[0.99rem] text-[0.69rem] font-normal text-gray-300 text-center mb-5">
                 {option.description}
               </p>
               {/* Button */}

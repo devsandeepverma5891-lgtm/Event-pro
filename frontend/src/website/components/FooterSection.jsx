@@ -80,25 +80,25 @@ const FooterSection = () => (
         <div className="w-24 h-1 bg-[#F19306] mb-8"></div>
 
         <div className="flex items-center mb-5 text-base font-normal justify-between flex-wrap gap-4">
-          <div className="flex items-center bg-gradient-to-t from-[#D5B452] to-[#8F6D26] bg-clip-text text-transparent text-md font-medium text-start">
-            <Calendar className="w-6 h-6 mr-2 text-[#8F6D26]" />
-            <h6 className="mr-7">October 18-19, 2025</h6>
+          <div className="w-[100%] flex items-start bg-gradient-to-t from-[#D5B452] to-[#8F6D26] bg-clip-text text-transparent text-md font-medium text-start">
+            <Calendar className="w-[10%] h-6 mr-2 text-[#8F6D26]" />
+            <h6 className="w-[90%] mr-7">Oct 18 & 19, 2025</h6>
           </div>
-          <div className="flex items-center bg-gradient-to-t from-[#D5B452] to-[#8F6D26] bg-clip-text text-transparent text-md font-medium text-start">
-            <MapPin className="w-6 h-6 mr-2 text-[#8F6D26]" />
-            <h6 className="mr-7">Novotel, Hyderabad</h6>
+          <div className="w-[100%] flex items-start bg-gradient-to-t from-[#D5B452] to-[#8F6D26] bg-clip-text text-transparent text-md font-medium text-start">
+            <MapPin className="w-[10%] h-6 mr-2 text-[#8F6D26]" />
+            <h6 className="w-[90%] mr-7">Sri Ram Reddy's House, SumanTV Network , 8-2-293/82/A/69, Plot No 69, Jubilee Hills Check Post Rd, Park View Enclave, Jubilee Hills, Hyderabad, Telangana 500034</h6>
           </div>
           
         </div>
 
         <div className="flex items-center mb-8 text-base font-normal justify-between flex-wrap gap-4">
-          <div className="flex items-center bg-gradient-to-t from-[#D5B452] to-[#8F6D26] bg-clip-text text-transparent text-md font-medium text-start">
-            <Mail className="w-6 h-6 mr-2 text-[#8F6D26]" />
-            <h6 className="mr-8">events@sumantv.com</h6>
+          <div className="w-[100%] flex items-start bg-gradient-to-t from-[#D5B452] to-[#8F6D26] bg-clip-text text-transparent text-md font-medium text-start">
+            <Mail className="w-[10%] h-6 mr-2 text-[#8F6D26]" />
+            <h6 className="w-[90%] mr-8">events@sumantv.com</h6>
           </div>
-          <div className="flex items-center justify-start bg-gradient-to-t from-[#D5B452] to-[#8F6D26] bg-clip-text text-transparent text-md font-medium text-start">
-            <Phone className="w-6 h-6 mr-2 text-[#8F6D26]" />
-            <h6 className="mr-8">+91 9030392333</h6>
+          <div className="w-[100%] flex items-start justify-start bg-gradient-to-t from-[#D5B452] to-[#8F6D26] bg-clip-text text-transparent text-md font-medium text-start">
+            <Phone className="w-[10%] h-6 mr-2 text-[#8F6D26]" />
+            <h6 className="w-[90%] mr-8">+91 9030392333</h6>
           </div>
         </div>
 

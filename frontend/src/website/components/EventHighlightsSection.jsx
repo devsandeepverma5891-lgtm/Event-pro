@@ -13,9 +13,9 @@ const EventHighlightsSection = () => {
 
     
   const highlights = [
-    { title: "50+ INDUSTRY SPEAKERS", img: industryspeaker },
+    { title: "20+ INDUSTRY SPEAKERS", img: industryspeaker },
     { title: "200+ COMPANIES PARTICIPATING", img: companiesparticipating },
-    { title: "20+ AWARD CATEGORIES", img: awardscategory },
+    { title: "15+ AWARD CATEGORIES", img: awardscategory },
     { title: "10,000+ EXPECTED ATTENDEES", img: expectedattendees },
     { title: "2 DAYS OF INNOVATION", img: daysofinnovation },
     { title: "NETWORKING OPPORTUNITIES", img: networkingopportunities },
